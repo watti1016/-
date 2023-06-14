@@ -1,0 +1,637 @@
+/* 初期位置 */
+body {
+  padding: 0;
+  margin: 0;
+  background: #EEFFFF;
+}
+img {
+  vertical-align: bottom;
+}
+footer {
+  padding: 0;
+  margin: 0;
+  background: #EEFFFF;
+}
+p {
+  font-size: 15px;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+h2 {
+  font-size: 50px;
+  line-height: 70px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+th {
+  text-align: center;
+}
+th, td {
+  border: 1px solid #e5e5e5;
+  padding: 8px 13px;
+}
+
+/* ====header==== */
+#header .header_top {
+  border-bottom: 1px solid #000000;
+  position: fixed;
+  background-color: #EEFFFF;
+  height: 100px;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.5s;
+}
+.logo {
+  padding-left: 50px;
+  position: fixed;
+  transition: 0.5s;
+}
+.logo_text {
+  color: #FFF;
+}
+.header_menu {
+  padding: 20px 0 30px 650px;
+  position: fixed;
+  transition: 0.5s;
+}
+.header_menu ul li {
+  float: left;
+  padding: 0 30px;
+  transition: 0.2s;
+}
+.header_menu ul li:hover {
+  transition: 0.4s;
+  text-shadow: #808080 1px 0 10px;
+}
+.mebu_btn {
+  display: none;
+}
+.menu_contents {
+  display: none;
+}
+/* top */
+.top {
+  background-image: url(https://school2.oohara.jp/ueda/portfolio/top_image);
+  background-size: cover;
+  height: 735px;
+}
+.top_title {
+  padding-top: 250px;
+  text-align: center;
+}
+.top_subTitle {
+  text-align: center;
+  padding-bottom: 300px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* 共通部分 */
+.contents {
+  background-color: #000000;
+}
+.contents h2 {
+  text-align: center;
+  color: #FFF;
+}
+.contents p {
+  text-align: center;
+  color: #FFF;
+}
+.section .border {
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+} 
+.border span {
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 56px solid transparent;
+  border-right: 56px solid transparent;
+  border-top: 18px solid #000000;
+}
+.img_right {
+  display: none;
+}
+/*========== main ============  */
+/* profile */
+.profile_Contents dl.profile_item {
+  float: left;
+  margin: 30px;
+  padding-right: 200px;
+}
+.profile_contentsR {
+  padding: 130px;
+}
+.profile_Contents dl img {
+  width: 450px;
+  margin-left: 30px;
+  border-radius: 100%;
+  border: 1px solid #000000;
+}
+.profile_Contents dl dt h3 {
+  font-size: 30px;
+}
+.profile_contentsR dd {
+  width :85%;
+  margin: 0 12.5%;
+}
+.profile_contentsR dd p {
+  padding: 15px 0;
+}
+.profile_Contents dl dd p {
+  font-size: 20px;
+}
+table {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+  overflow-x: hidden;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #e5e5e5;
+}
+
+/* zisseki */
+.slideListPC {
+  width: 95%;
+  margin: 0 2.5%;
+}
+.slide h3 {
+  background: #999999;
+  color: #FFF;
+  font-size: 36px;
+  line-height: 100px;
+  margin: 5px;
+  padding: 15% 2%;
+  position: relative;
+  text-align: center;
+}
+.slideList {
+  display: none;
+}
+.skill1.slideIn {
+  animation: slide 1s forwards;
+}
+.skill2.slideIn {
+  animation: slide 2s forwards;
+}
+.skill3.slideIn {
+  animation: slide 2.5s forwards;
+}
+.skill4.slideIn {
+  animation: slide 3s forwards;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translatex(-64px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+
+/* skill */
+.skill_list {
+  margin: 50px 50px;
+}
+.skill_list dl dt {
+  float: left;
+  padding-right: 50px;
+}
+.skill_list dl dt.html p {
+  border: 1px solid #FF9872;
+  background-color: #FF9872;
+}
+.skill_list dl dt.css p {
+  border: 1px solid #29aadf;
+  background-color: #29aadf;
+}
+.skill_list dl dt.js p {
+  border: 1px solid #FFCC66;
+  background-color: #FFCC66;
+}
+.skill_list dl dt.typing p {
+  border: 1px solid #CCCCCC;
+  background-color: #CCCCCC;
+}
+.skill_list dl p {
+  padding:  15px 60px;
+  margin: 10px 0;
+}
+.skill_list dd {
+  text-align: left;
+}
+.skill1 dd {
+  border: 1px solid #FF9872;
+}
+.skill2 dd {
+  border: 1px solid #29aadf;
+}
+.skill3 dd {
+  border: 1px solid #FFCC66;
+}
+.skill4 dd {
+  border: 1px solid #CCCCCC; 
+}
+.skill_list dd {
+  padding: 30px 0;
+}
+
+/* rule */
+.rule_contents {
+  width: 100%;
+}
+.rule_contents img {
+  width: 40%;
+  height: 100%;
+}
+.rule_contents .left {
+  width: 57.7%;
+  padding-left: 30px;
+}
+.rule_contents .description {
+  width: 100%;
+  background-color: #4682B4;
+  color: #FFF;
+}
+.rule_contents .left {
+  float: left;
+}
+.rule_contents img.right {
+  float: left;
+}
+.rule_contents h3 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.rule_contents dd {
+  font-size: 13px;
+  margin-bottom: 31px;
+  margin-top: 0;
+}
+.rule_contents .time_text {
+  margin: 10px 0;
+}
+.rule_contents .rule_future {
+  margin-top: -35px;
+}
+.rule_contents .future_text {
+  padding: 40px 0;
+  background-color: #4682B4;
+}
+.rule_contents .future_text p {
+  padding: 20px 0;
+}
+.rule_contents .costomer_text {
+  margin-bottom: 20px;
+}
+.rule_contents .costomer_text p {
+  padding: 16.5px 0;
+}
+
+/* rule_check */
+.rule_check {
+  margin-top: 3px;
+  margin-bottom: -35px;
+}
+.rule_check ul li {
+  list-style: square;
+}
+
+/* costomer */
+.costomer {
+  margin-top: -20px;
+}
+.rule1.slideTop {
+  animation: botop 2s forwards;
+}
+.rule2.slideTop {
+  animation: botop 2s forwards;
+}
+.rule3.slideTop {
+  animation: botop 2s forwards;
+}
+.rule4.slideTop {
+  animation: botop 2s forwards;
+}
+.rule5.slideTop {
+  animation: botop 2s forwards;
+}
+@keyframes botop {
+  0% {
+    opacity: 0;
+    transform: translatey(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+/* Service */
+.Service_content {
+  margin-top: -20px;
+  background-size: cover;
+  height: 500px;
+}
+.Service_text {
+  position: relative;
+}
+.Service_subTitle {
+  background-color: #000000;
+  opacity: 0.5;
+  text-align: center;
+  color: #FFF;
+}
+.Service_text p {
+  color: #FFF;
+  text-align: center;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+.Service_subText p {
+  border: 1px solid #00FFFF;
+  background-color: #00FFFF;
+  width: 45%;
+  float: left;
+  position: relative;
+  margin: 10px 2%;
+  padding: 20px 0;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.Service_subText p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #5bc8ac;
+  z-index: -1;
+  transition: .2s;
+}
+.Service_subText p:hover::before {
+  width: 100%;
+}
+
+/* footer */
+.footer_border {
+  border: 1px solid #00FFFF;
+}
+footer {
+  border-top: 1px solid #00FFFF;
+}
+footer p {
+  font-size: 30px;
+  margin: 0 40px;
+  padding: 50px 0 30px 40px;
+  border-bottom: 1px solid #000000;
+}
+footer ul.menu_float {
+  float: left;
+}
+footer ul li.bottom {
+  padding-bottom: 100px;
+}
+footer ul li span {
+  transition: 0.4s;
+}
+footer ul li span:hover {
+  transition: 0.4s;
+  text-shadow: #808080 1px 0 10px;
+}
+.copy-right  {
+  background-color: #808080;
+}
+.copy-right p {
+  text-align: center;
+  font-size: 15px;
+}
+.fa {
+  font-size: 30px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.page_top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  color: #fff;
+}
+.pagetop span {
+  display: block;
+  border-radius: 25px;
+  background: #2b2b2b;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 36px;
+  opacity: .8;
+}
+.fa_up:before{
+  color: #47B39D;
+}
+/*===== レスポンシブ =======*/
+@media only screen and (max-width: 1000px){
+/*  ヘッダー  */
+  #header .header_menu {
+    display: none;
+  }
+  #header .menu_contents.open {
+    display: inline;
+    background-color: #EEFFFF;
+  }
+  #header .menu_btn {
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin: 0 20px 0 auto;
+    padding-top: 25px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  #header .menu_btn span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #000000;
+    border-radius: 9px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  #header .menu_btn span:nth-child(1){
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  #header .menu_btn span:nth-child(2){
+    top: 40px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  #header .menu_btn span:nth-child(3){
+    top: 55px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  #header .menu_btn.open span:nth-child(1){
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  #header .menu_btn.open span:nth-child(2){
+    width: 0%;
+    opacity: 0;
+  }
+  #header .menu_btn.open span:nth-child(3){
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+
+  #header .logo {
+    padding-left: 20px;
+  }
+  #header .top_title {
+    padding-top: 0px;
+  }
+  .menu_contents {
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    position: fixed;
+  }
+  .menu_contents ul li.padding {
+    padding: 0 0 30px 0 ;
+  }
+}
+@media screen and (max-width: 991px){
+/*  プロフィール  */
+  .top .top_subTitle {
+    width: 100%;
+  }
+  .profile_Contents dl img {
+    width: 100%;
+    height: 100%;
+  }
+  .profile_Contents dl dt h3 {
+    text-align: center;
+  }
+  .profile_Contents .profile_item {
+    width: 60%;
+    margin: 20px 15%!important;
+    padding-right: 20px!important;
+  }
+  .profile_contentsR {
+    padding: 0;
+  }
+  .profile_contentsR dd {
+    text-align: center;
+  }
+  .contents h2 {
+    font-size: 28px;
+  }
+/*  スキル  */
+  .html, .css, .js, .typing {
+    width: 100%;
+  }
+  .skill_list dl dt {
+    padding-right: 0;
+  }
+  .skill_list dl p {
+    text-align: center;
+  }
+  .skill_list dd {
+    margin-left: 0;
+    text-align: center;
+  }
+/*  ruleコンテンツ  */
+  .rule_contents .left {
+    width: 85%;
+  }
+  .rule_contents .left {
+    float: none;
+  }
+  .rule_contents img.right {
+    float: none;
+  }
+  .PC img {
+    display: none;
+  }
+  .img_right {
+    display: inline;
+    text-align: center;
+  }
+  .rule_contents img  {
+    width: 90%;
+  }
+  .description dt h3 {
+    padding: 20px 0 0 20px;
+  }
+  .description .img_right {
+    margin: 0 0 0 20px;
+  }
+  .description .img_right uimg {
+    width: 90%;
+  }
+  .description .future_text {
+    width: 85%;
+    margin: 0 0 0 20px;
+  }
+  .description .costomer_text {
+    width: 85%;
+    margin: 0 0 0 20px;
+  }
+  
+/*  Service  */
+  .Service_content {
+    height: 800px;
+  }
+  .Service_subText p {
+    width: 80%;
+    float: none;
+    padding: 30px;
+  }
+}
