@@ -365,7 +365,7 @@ table {
 }
 .Service_subText p {
   border: 1px solid #00FFFF;
-  background-color: #00FFFF;
+  background-color: #000000;
   width: 45%;
   float: left;
   position: relative;
